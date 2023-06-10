@@ -1,20 +1,22 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import React from 'react';
 
-const ItemListContainer = () => {
+const ItemListContainer = ({ greeting }) => {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Producto</Card.Title>
-        <Card.Text>
-          Descripcion del producto. Precio
-        </Card.Text>
-        <Button variant="primary">Comprar</Button>
-      </Card.Body>
-    </Card>
+    <div style={containerStyle}>
+      <h2 style={textStyle}>{greeting}</h2>
+    </div>
   );
-}
+};
+
+const containerStyle = {
+  backgroundColor: '#f2f2f2',
+  padding: '20px',
+  borderRadius: '4px',
+};
+
+const textStyle = {
+  color: '#333',
+  fontSize: '15px',
+};
 
 export default ItemListContainer;

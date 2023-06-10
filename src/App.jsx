@@ -2,6 +2,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomNavbar from './components/NavBar.jsx';
 import ItemListContainer from './components/ItemListContainer';
+import CardWidget from './components/CardWidget';
 
 const App = () => {
 
@@ -11,9 +12,10 @@ const App = () => {
         <CustomNavbar />
       </div>
       <div>
-      <ItemListContainer />
-      <ItemListContainer />
-      <ItemListContainer />
+      <ItemListContainer greeting={"Bienvenidos a dagú"}/>
+      </div>
+      <div>
+      <CardWidget />
       </div>
     </div>
   );
